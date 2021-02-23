@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TakaheAI Blog on TakaheAI</title>
+    <link>https://takaheai.github.io/blog/</link>
+    <description>Recent content in TakaheAI Blog on TakaheAI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 07 Jul 2018 18:23:33 +0600</lastBuildDate>
+    
+	<atom:link href="https://takaheai.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Generating Talking Head Models From Text With Synced Voice</title>
+      <link>https://takaheai.github.io/blog/generating-talking-heads-from-text-with-synced-voice/</link>
+      <pubDate>Tue, 29 Sep 2020 00:00:00 +1300</pubDate>
+      
+      <guid>https://takaheai.github.io/blog/generating-talking-heads-from-text-with-synced-voice/</guid>
+      <description>In this report I introduce a pipeline to animate a chatbot.</description>
+    </item>
+    
+    <item>
+      <title>Generating poetry with GPT-2</title>
+      <link>https://takaheai.github.io/blog/generating-poetry-with-gpt-2/</link>
+      <pubDate>Thu, 27 Aug 2020 00:00:00 +1200</pubDate>
+      
+      <guid>https://takaheai.github.io/blog/generating-poetry-with-gpt-2/</guid>
+      <description>I use OpenAI&amp;rsquo;s GPT-2 to generate poetry. The model takes a string as inspiration which consists firstly of a lengthy poem to set the task/style and a phrase concatenated to the end which sets the topic.</description>
+    </item>
+    
+  </channel>
+</rss>

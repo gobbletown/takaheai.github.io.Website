@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us"><head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="description" content="">
+
+<meta name="generator" content="Hugo 0.71.0" />
+
+<title>Generating poetry with GPT-2</title>
+
+<!-- Mobile Specific Meta -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Favicon -->
+<link rel="shortcut icon" type="image/x-icon" href="https://takaheai.github.io/images/favicon.ico" />
+
+<!-- Stylesheets -->
+<!-- Themefisher Icon font -->
+<link rel="stylesheet" href="https://takaheai.github.io/plugins/themefisher-font/style.css">
+<!-- bootstrap.min css -->
+<link rel="stylesheet" href="https://takaheai.github.io/plugins/bootstrap/dist/css/bootstrap.min.css">
+<!-- Lightbox.min css -->
+<link rel="stylesheet" href="https://takaheai.github.io/plugins/lightbox2/dist/css/lightbox.min.css">
+<!-- Slick Carousel -->
+<link rel="stylesheet" href="https://takaheai.github.io/plugins/slick-carousel/slick/slick.css">
+<link rel="stylesheet" href="https://takaheai.github.io/plugins/slick-carousel/slick/slick-theme.css">
+<!-- Main Stylesheet -->
+
+
+<link rel="stylesheet" href="https://takaheai.github.io/css/style.min.css" media="screen">
+
+</head>
+<body id="body">
+        <!-- Start Preloader -->
+<div id="preloader">
+    <div class="preloader">
+        <div class="sk-circle1 sk-child"></div>
+        <div class="sk-circle2 sk-child"></div>
+        <div class="sk-circle3 sk-child"></div>
+        <div class="sk-circle4 sk-child"></div>
+        <div class="sk-circle5 sk-child"></div>
+        <div class="sk-circle6 sk-child"></div>
+        <div class="sk-circle7 sk-child"></div>
+        <div class="sk-circle8 sk-child"></div>
+        <div class="sk-circle9 sk-child"></div>
+        <div class="sk-circle10 sk-child"></div>
+        <div class="sk-circle11 sk-child"></div>
+        <div class="sk-circle12 sk-child"></div>
+    </div>
+</div>
+<!-- End Preloader --><!-- Fixed Navigation -->
+
+<section class="header navigation">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="navbar navbar-expand-md">
+                    <a class="navbar-brand" href="https://takaheai.github.io/">
+                        <img class="logo img-fluid" src="https://takaheai.github.io/images/takahe2.png" alt="TakaheAI">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+                        aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="tf-ion-android-menu"></span>
+                    </button>
+                    
+                    
+                    <div class="collapse navbar-collapse" id="navigation">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link"
+                                    href="https://takaheai.github.io/">Home</a>
+                            </li>
+                            
+                            
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://takaheai.github.io/showcase">Showcase</a>
+                            </li>
+                            
+                            
+                            
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://takaheai.github.io/blog">Blog</a>
+                            </li>
+                            
+                            
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</section><div id="content">
+
+<section class="blog-single section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                <img src="https://takaheai.github.io/images/blog/generating-poetry-with-gpt-2.png" class="w-100 mb-3" alt="Post-Image">
+                <h2>Generating poetry with GPT-2</h2>
+                <div class="post-meta mb-5">
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <span>By</span>
+                            [Shane Mulligan]
+                        </li>
+                        <li class="list-inline-item">
+                            <span>at</span>
+                            <span>August 27, 2020</span>
+                        </li>
+                    </ul>
+                </div>
+                <p>I use OpenAI&rsquo;s GPT-2 to generate poetry. The
+model takes a string as inspiration which
+consists firstly of a lengthy poem to set the
+task/style and a phrase concatenated to the
+end which sets the topic.</p>
+<h2 id="resources">Resources</h2>
+<dl>
+<dt>Original code and blog article</dt>
+<dd><!-- raw HTML omitted -->
+<ul>
+<li><a href="https://github.com/kylemcdonald/gpt-2-poetry">https://github.com/kylemcdonald/gpt-2-poetry</a> <!-- raw HTML omitted --></li>
+<li><a href="https://kylemcdonald.github.io/gpt-2-poetry/">https://kylemcdonald.github.io/gpt-2-poetry/</a></li>
+</ul>
+</dd>
+<dt>Final code</dt>
+<dd><a href="https://github.com/mullikine/gpt-2">https://github.com/mullikine/gpt-2</a></dd>
+<dt>Extra reading</dt>
+<dd><a href="https://www.gwern.net/GPT-2">https://www.gwern.net/GPT-2</a></dd>
+</dl>
+<h2 id="running-dockerfile-dot-cpu">Running <code>Dockerfile.cpu</code></h2>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<h2 id="original-steps">Original steps</h2>
+<ul>
+<li>Download the HTML from <code>poetryfoundation.org</code> based on the urls in <code>romantic-urls.txt</code>.
+<a href="https://gist.github.com/bea516e3726d0a0ab139bca534a43fe9">https://gist.github.com/bea516e3726d0a0ab139bca534a43fe9</a>
+<ul>
+<li>
+<p>Use <code>Parse Poetry.py</code> to extract</p>
+<ul>
+<li>title
+image = &ldquo;images/blog/generating-poetry-with-gpt-2.png&rdquo;</li>
+<li>author</li>
+<li>poem</li>
+</ul>
+</li>
+<li>
+<p>Save that data to <code>output/</code>.</p>
+<ul>
+<li>The metadata is contained in the first few lines.</li>
+</ul>
+</li>
+<li>
+<p>Use <code>Generate GPT-2.py</code> to generate poems
+based on random chunks from the poems and the
+seed words.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="updated-steps">Updated steps</h2>
+<h3 id="create-inspiration-data">Create inspiration data</h3>
+<ul>
+<li>Extract
+<ul>
+<li>title
+image = &ldquo;images/blog/generating-poetry-with-gpt-2.png&rdquo;</li>
+<li>author</li>
+<li>poem</li>
+</ul>
+</li>
+<li>Save that data to <code>output/</code>.
+<ul>
+<li>The metadata is contained in the first few lines.</li>
+</ul>
+</li>
+</ul>
+<h3 id="set-up-repository">Set up repository</h3>
+<ul>
+<li>Convert the notebooks to py</li>
+<li>place the notebooks py files inside <code>src</code></li>
+</ul>
+<p>$MYGIT/openai/gpt-2/src</p>
+<h3 id="get-openai-gpt-2-running">Get OpenAI <code>GPT-2</code> running</h3>
+<ul>
+<li>Create a docker container
+Base it on the OpenAI container that includes the notebook py files.</li>
+<li>Run host machine
+Do this so python development becomes easy.</li>
+</ul>
+<h3 id="fix-sample-dot-py-dot">Fix <code>sample.py</code>.</h3>
+<p>Thanks Chen! <a href="http://ipsumdominum.github.io/">http://ipsumdominum.github.io/</a></p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">38
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">39
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">40
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">41
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">42
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">43
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">44
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">45
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">46
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">47
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">48
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">49
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">50
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">51
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">52
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">53
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">54
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-diff" data-lang="diff">diff --git a/src/sample.py b/src/sample.py
+index c90ed28..41eb76f 100644
+<span style="color:#f92672">--- a/src/sample.py
+</span><span style="color:#f92672"></span><span style="color:#a6e22e">+++ b/src/sample.py
+</span><span style="color:#a6e22e"></span><span style="color:#75715e">@@ -1,6 +1,8 @@
+</span><span style="color:#75715e"></span> import tensorflow as tf
+
+<span style="color:#a6e22e">+import numpy as np
+</span><span style="color:#a6e22e"></span> import model
+<span style="color:#a6e22e">+from shanepy import *
+</span><span style="color:#a6e22e"></span>
+ def top_k_logits(logits, k):
+     if k == 0:
+<span style="color:#75715e">@@ -25,7 +27,7 @@ def top_k_logits(logits, k):
+</span><span style="color:#75715e"></span> def top_p_logits(logits, p):
+     &#34;&#34;&#34;Nucleus sampling&#34;&#34;&#34;
+     batch, _ = logits.shape.as_list()
+<span style="color:#f92672">-    sorted_logits = tf.sort(logits, direction=&#39;DESCENDING&#39;, axis=-1)
+</span><span style="color:#f92672"></span><span style="color:#a6e22e">+    sorted_logits = tf.contrib.framework.sort(logits, direction=&#39;DESCENDING&#39;, axis=-1)
+</span><span style="color:#a6e22e"></span>     cumulative_probs = tf.cumsum(tf.nn.softmax(sorted_logits, axis=-1), axis=-1)
+     indices = tf.stack([
+         tf.range(0, batch),
+<span style="color:#75715e">@@ -33,6 +35,11 @@ def top_p_logits(logits, p):
+</span><span style="color:#75715e"></span>         tf.maximum(tf.reduce_sum(tf.cast(cumulative_probs &lt;= p, tf.int32), axis=-1) - 1, 0),
+     ], axis=-1)
+     min_values = tf.gather_nd(sorted_logits, indices)
+<span style="color:#a6e22e">+
+</span><span style="color:#a6e22e">+    # myembed(globals(), locals())
+</span><span style="color:#a6e22e">+
+</span><span style="color:#a6e22e">+    # return np.where(
+</span><span style="color:#a6e22e">+    logits = tf.transpose(logits)
+</span><span style="color:#a6e22e"></span>     return tf.where(
+         logits &lt; min_values,
+         tf.ones_like(logits) * -1e10,
+<span style="color:#75715e">@@ -51,6 +58,9 @@ def sample_sequence(*, hparams, length, start_token=None, batch_size=None, conte
+</span><span style="color:#75715e"></span>         lm_output = model.model(hparams=hparams, X=tokens, past=past, reuse=tf.AUTO_REUSE)
+
+         logits = lm_output[&#39;logits&#39;][:, :, :hparams.n_vocab]
+<span style="color:#a6e22e">+
+</span><span style="color:#a6e22e">+        # myembed(globals(), locals())
+</span><span style="color:#a6e22e">+
+</span><span style="color:#a6e22e"></span>         presents = lm_output[&#39;present&#39;]
+         presents.set_shape(model.past_shape(hparams=hparams, batch_size=batch_size))
+         return {
+<span style="color:#75715e">@@ -64,6 +74,9 @@ def sample_sequence(*, hparams, length, start_token=None, batch_size=None, conte
+</span><span style="color:#75715e"></span>             logits = next_outputs[&#39;logits&#39;][:, -1, :]  / tf.to_float(temperature)
+             logits = top_k_logits(logits, k=top_k)
+             logits = top_p_logits(logits, p=top_p)
+<span style="color:#a6e22e">+            # myembed(globals(), locals())
+</span><span style="color:#a6e22e">+            logits = tf.transpose(logits)
+</span><span style="color:#a6e22e">+            # print(logits.shape)
+</span><span style="color:#a6e22e"></span>             samples = tf.multinomial(logits, num_samples=1, output_dtype=tf.int32)
+             return [
+                 next_outputs[&#39;presents&#39;] if past is None else tf.concat([past, next_outputs[&#39;presents&#39;]], axis=-2),
+</code></pre></td></tr></table>
+</div>
+</div>
+<h3 id="generate-poetry">Generate poetry</h3>
+<ul>
+<li>Output files:
+<ul>
+<li><code>generated.json</code></li>
+<li><code>poems.json</code></li>
+</ul>
+</li>
+</ul>
+<p><!-- raw HTML omitted --><strong>Run with debugging</strong><!-- raw HTML omitted --></p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">cd <span style="color:#e6db74">&#34;</span>$MYGIT<span style="color:#e6db74">/mullikine/gpt-2/src&#34;</span>;
+python3.6 <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    -m trace <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    --ignore-dir<span style="color:#f92672">=</span>$HOME/lib64:$HOME/lib:/usr <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    -t <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    gen.py</code></pre></td></tr></table>
+</div>
+</div>
+<p><!-- raw HTML omitted --><strong>Output is generated</strong><!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+            
+        </div><!-- Footer Start -->
+<footer id="footer" class="bg-one">
+    <div class="top-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3 col-md-3 col-lg-3">
+                    <h3>About</h3>
+                    <p>Enabling humanity with AI</p>
+                </div>
+
+                <div class="col-sm-3 col-md-3 col-lg-3">
+                </div>
+                <div class="col-sm-3 col-md-3 col-lg-3">
+                </div>
+                <div class="col-sm-3 col-md-3 col-lg-3">
+                <img class="logo-footer img-fluid" src="https://takaheai.github.io/images/takahe3.png" alt="TakaheAI">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+<!-- end footer -->
+
+
+<!-- Essential Scripts -->
+
+<!-- jQuery -->
+<script src="https://takaheai.github.io/plugins/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script src="https://takaheai.github.io/plugins/bootstrap/dist/js/popper.min.js"></script>
+<script src="https://takaheai.github.io/plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- Parallax -->
+<script src="https://takaheai.github.io/plugins/parallax/jquery.parallax-1.1.3.js"></script>
+<!-- lightbox -->
+<script src="https://takaheai.github.io/plugins/lightbox2/dist/js/lightbox.min.js"></script>
+<!-- Slick Carousel -->
+<script src="https://takaheai.github.io/plugins/slick-carousel/slick/slick.min.js"></script>
+<!-- Portfolio Filtering -->
+<script src="https://takaheai.github.io/plugins/filterzr/jquery.filterizr.min.js"></script>
+<!-- Smooth Scroll js -->
+<script src="https://takaheai.github.io/plugins/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC72vZw-6tGqFyRhhg5CkF2fqfILn2Tsw"></script>
+<!-- Main Script -->
+
+<script src="https://takaheai.github.io/js/script.min.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Contents on TakaheAI</title>
+    <link>https://takaheai.github.io/content/</link>
+    <description>Recent content in Contents on TakaheAI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 27 Aug 2020 00:00:00 +1200</lastBuildDate>
+    
+	<atom:link href="https://takaheai.github.io/content/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Generating poetry with GPT-2</title>
+      <link>https://takaheai.github.io/content/generating-poetry-with-gpt-2/</link>
+      <pubDate>Thu, 27 Aug 2020 00:00:00 +1200</pubDate>
+      
+      <guid>https://takaheai.github.io/content/generating-poetry-with-gpt-2/</guid>
+      <description>Resources https://github.com/kylemcdonald/gpt-2-poetry https://kylemcdonald.github.io/gpt-2-poetry/ Final code https://github.com/mullikine/gpt-2  Running the Dockerfile.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TakaheAI</title>
+    <link>https://takaheai.github.io/</link>
+    <description>Recent content on TakaheAI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 29 Sep 2020 00:00:00 +1300</lastBuildDate>
+    
+	<atom:link href="https://takaheai.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Generating Talking Head Models From Text With Synced Voice</title>
+      <link>https://takaheai.github.io/blog/generating-talking-heads-from-text-with-synced-voice/</link>
+      <pubDate>Tue, 29 Sep 2020 00:00:00 +1300</pubDate>
+      
+      <guid>https://takaheai.github.io/blog/generating-talking-heads-from-text-with-synced-voice/</guid>
+      <description>In this report I introduce a pipeline to animate a chatbot.</description>
+    </item>
+    
+    <item>
+      <title>Anya</title>
+      <link>https://takaheai.github.io/showcase/anya/</link>
+      <pubDate>Sat, 19 Sep 2020 00:00:00 +1200</pubDate>
+      
+      <guid>https://takaheai.github.io/showcase/anya/</guid>
+      <description>Connected end to end with GPT-2 chatbot.</description>
+    </item>
+    
+    <item>
+      <title>Dr Will from Transcendence</title>
+      <link>https://takaheai.github.io/showcase/dr-will-from-transcendence/</link>
+      <pubDate>Sat, 19 Sep 2020 00:00:00 +1200</pubDate>
+      
+      <guid>https://takaheai.github.io/showcase/dr-will-from-transcendence/</guid>
+      <description>This is a demonstration of Text to Speech, speech to landmarks, then landmarks to animation.</description>
+    </item>
+    
+    <item>
+      <title>Elon Musk</title>
+      <link>https://takaheai.github.io/showcase/elon-musk/</link>
+      <pubDate>Sat, 19 Sep 2020 00:00:00 +1200</pubDate>
+      
+      <guid>https://takaheai.github.io/showcase/elon-musk/</guid>
+      <description>We can retrain to fit a particular voice quite well.</description>
+    </item>
+    
+    <item>
+      <title>Joi from Blade Runner 2049</title>
+      <link>https://takaheai.github.io/showcase/joi-from-blade-runner-2049/</link>
+      <pubDate>Sat, 19 Sep 2020 00:00:00 +1200</pubDate>
+      
+      <guid>https://takaheai.github.io/showcase/joi-from-blade-runner-2049/</guid>
+      <description>Almost real time generation of speech to talking head.</description>
+    </item>
+    
+    <item>
+      <title>Generating poetry with GPT-2</title>
+      <link>https://takaheai.github.io/blog/generating-poetry-with-gpt-2/</link>
+      <pubDate>Thu, 27 Aug 2020 00:00:00 +1200</pubDate>
+      
+      <guid>https://takaheai.github.io/blog/generating-poetry-with-gpt-2/</guid>
+      <description>I use OpenAI&amp;rsquo;s GPT-2 to generate poetry. The model takes a string as inspiration which consists firstly of a lengthy poem to set the task/style and a phrase concatenated to the end which sets the topic.</description>
+    </item>
+    
+  </channel>
+</rss>

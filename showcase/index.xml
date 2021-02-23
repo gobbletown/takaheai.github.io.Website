@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Showcase on TakaheAI</title>
+    <link>https://takaheai.github.io/showcase/</link>
+    <description>Recent content in Showcase on TakaheAI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 07 Jul 2018 15:45:06 +0600</lastBuildDate>
+    
+	<atom:link href="https://takaheai.github.io/showcase/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Anya</title>
+      <link>https://takaheai.github.io/showcase/anya/</link>
+      <pubDate>Sat, 19 Sep 2020 00:00:00 +1200</pubDate>
+      
+      <guid>https://takaheai.github.io/showcase/anya/</guid>
+      <description>Connected end to end with GPT-2 chatbot.</description>
+    </item>
+    
+    <item>
+      <title>Dr Will from Transcendence</title>
+      <link>https://takaheai.github.io/showcase/dr-will-from-transcendence/</link>
+      <pubDate>Sat, 19 Sep 2020 00:00:00 +1200</pubDate>
+      
+      <guid>https://takaheai.github.io/showcase/dr-will-from-transcendence/</guid>
+      <description>This is a demonstration of Text to Speech, speech to landmarks, then landmarks to animation.</description>
+    </item>
+    
+    <item>
+      <title>Elon Musk</title>
+      <link>https://takaheai.github.io/showcase/elon-musk/</link>
+      <pubDate>Sat, 19 Sep 2020 00:00:00 +1200</pubDate>
+      
+      <guid>https://takaheai.github.io/showcase/elon-musk/</guid>
+      <description>We can retrain to fit a particular voice quite well.</description>
+    </item>
+    
+    <item>
+      <title>Joi from Blade Runner 2049</title>
+      <link>https://takaheai.github.io/showcase/joi-from-blade-runner-2049/</link>
+      <pubDate>Sat, 19 Sep 2020 00:00:00 +1200</pubDate>
+      
+      <guid>https://takaheai.github.io/showcase/joi-from-blade-runner-2049/</guid>
+      <description>Almost real time generation of speech to talking head.</description>
+    </item>
+    
+  </channel>
+</rss>
