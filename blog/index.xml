@@ -6,11 +6,7 @@
     <description>Recent content in TakaheAI Blog on TakaheAI</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 07 Jul 2018 18:23:33 +0600</lastBuildDate>
-    
-	<atom:link href="https://takaheai.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 07 Jul 2018 18:23:33 +0600</lastBuildDate><atom:link href="https://takaheai.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Generating Talking Head Models From Text With Synced Voice</title>
       <link>https://takaheai.github.io/blog/generating-talking-heads-from-text-with-synced-voice/</link>
